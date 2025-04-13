@@ -135,7 +135,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/ryan/code/jovian/jovian-backend/generated/prisma",
+      "value": "/home/ryan/code/jovian/jovian-user-service/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -149,11 +149,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/ryan/code/jovian/jovian-backend/prisma/schema.prisma",
+    "sourceFilePath": "/home/ryan/code/jovian/jovian-user-service/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../.env"
   },
   "relativePath": "../../prisma",
@@ -163,11 +163,12 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://postgres:aim120c@postgres.ryankdjones.net:5432/jovian?schema=public"
+        "value": null
       }
     }
   },
