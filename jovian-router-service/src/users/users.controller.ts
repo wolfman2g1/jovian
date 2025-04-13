@@ -5,6 +5,8 @@ import { SignUpDto } from './dto';
 export class UsersController {
 constructor(@Inject('JOVIAN_ROUTER_SERVICE') private natsClient: ClientProxy) { }
     @Post("create")
-    createUser(@Body() dto: SignUpDto) { }
-
- }
+    createUser(@Body() signUPDto: SignUpDto) {
+        this.natsClient.send({ cmd: "createUser" }, signUPDto);
+    }
+}
+ 
