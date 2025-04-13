@@ -1,16 +1,22 @@
 services:
-  #gateway:
-  # build: ./jovian-router
-  # ports:
-  #   - "5000:5000"
-  # environment:
-  #   - PORT=5000
-  #user-service:
-  # build: ./jovian-user-service
-  # ports:
-  #   - "5001:5001"
-  # environment:
-  #   - PORT=5001
+  gateway:
+   build: ./jovian-router-service
+   ports:
+     - "5000:5000"
+   environment:
+     - PORT=5000
+     - NATS=nats:4222
+   volumes:
+      - ./jovian-router-service:/usr/src/app
+  user-service:
+   build: ./jovian-user-service
+   ports:
+     - "5001:5001"
+   environment:
+     - PORT=5001
+     - NATS=nats:4222
+   volumes:
+        - ./jovian-user-service:/usr/src/app
   #store-service:
   # build: ./jovian-store-service
   # ports:
