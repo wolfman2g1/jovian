@@ -1,0 +1,14 @@
+jovian-backend/node_modules
+jovian-backend/dist
+jovian-backend/.env
+jovian-backend/.env.local
+jovian-backend/.env.development
+jovian-frontend/node_modules
+jovian-frontend/.env
+jovian-frontend/.env.local
+jovian-frontend/.env.development
+jovian-frontend/.env.production
+jovian-frontend/dist
+jovian-frontend/build
+jovian-frontend/.next
+jovian-backend/node_modules
