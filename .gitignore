@@ -1,8 +1,16 @@
-jovian-backend/node_modules
-jovian-backend/dist
-jovian-backend/.env
-jovian-backend/.env.local
-jovian-backend/.env.development
+jovian-user-service/node_modules
+jovian-user-service/dist
+jovian-user-service/.env
+jovian-user-service/.env.local
+jovian-user-service/.env.development
+jovian-user-router-service/dist
+jovian-user-router-service/.env
+jovian-user-router-service/.env.local
+jovian-user-router-service/.env.development
+jovian-user-store-service/dist
+jovian-user-store-service/.env
+jovian-user-store-service/.env.local
+jovian-user-store-service/.env.development
 jovian-frontend/node_modules
 jovian-frontend/.env
 jovian-frontend/.env.local
@@ -11,4 +19,4 @@ jovian-frontend/.env.production
 jovian-frontend/dist
 jovian-frontend/build
 jovian-frontend/.next
-jovian-backend/node_modules
+jovian-user-service/node_modules

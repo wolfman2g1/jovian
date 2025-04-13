@@ -1,0 +1,39 @@
+services:
+  #gateway:
+  # build: ./jovian-router
+  # ports:
+  #   - "5000:5000"
+  # environment:
+  #   - PORT=5000
+  #user-service:
+  # build: ./jovian-user-service
+  # ports:
+  #   - "5001:5001"
+  # environment:
+  #   - PORT=5001
+  #store-service:
+  # build: ./jovian-store-service
+  # ports:
+  #   - "5002:5002"
+  # environment:
+  #   - PORT=5002
+  nats:
+    image: nats
+    ports:
+      - 4222:4222
+  user-db:
+    image: postgres:13
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: jovian-user
+  #store-db:
+  #  image: postgres:13
+  #  ports:
+  #    - 5433:5432
+  #  environment:
+  #    POSTGRES_USER: postgres
+  #    POSTGRES_PASSWORD: 123
+  #    POSTGRES_DB: jovian-store
